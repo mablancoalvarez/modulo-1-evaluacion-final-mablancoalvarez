@@ -11,8 +11,8 @@ letter-spacing: normal;
 color: $colormain;
 }
 
-.tips_title{
-
+.tips_title {
+  width: 290px;
   height: 60px;
   font-family: $fontPrimary;
   font-size: 24px;
@@ -21,18 +21,61 @@ color: $colormain;
   font-style: normal;
   line-height: 1.25;
   letter-spacing: normal;
+  color: $colorGeneral;
+}
+
+.tips_content {
+  height: 120px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
   color: $colorContent;
 }
-// .tips_content{
-//   color:$colorContent;
-//   height: 120px;
-//   font-family: $fontSecundary;
-//   font-size: 18px;
-//   font-weight: normal;
-//   font-stretch: normal;
-//   font-style: normal;
-//   line-height: 1.67;
-//   letter-spacing: normal;
 
-// }
+.box_tips {
+  width: 76px;
+  height: 45px;
+  border-radius: 22.5px;
+  border: solid 2px $colorcontent;
+  text-align: center;
+}
 
+.button_tips{
+  width: 25px;
+  height: 45px;
+  font-family: $fontSecundary;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.25;
+  letter-spacing: normal;
+  text-align: center;
+  color:$colorcontent;
+}
+
+.container_reason {
+  background-color: $colorclear;
+  width: 100%;
+  height: 624px;
+
+}
+
+.text_reason{
+  text-align: center;
+  padding: 15px 30px;
+  font-family: $fontPrimary;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+  color:$colorGeneral;
+
+}
