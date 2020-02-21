@@ -1,6 +1,7 @@
 .box_hero {
     background-image:url(../images/cover.jpg);
     height: 100vh;
+    max-height: 568px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -56,7 +57,13 @@ width: 20px;
 
 }
 
+.tips_button {
+    width: 76px;
+    height: 45px;
+    border-radius: 22.5px;
+    border: solid 2px $colorcontent;
 
+}
 
     
     
