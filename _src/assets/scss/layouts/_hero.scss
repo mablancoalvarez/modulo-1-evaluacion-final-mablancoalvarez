@@ -5,38 +5,38 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  text-align: center;
 
   .hero_text {
-    height: 100vh;
+    // height: 100vh;
     width: 290px;
     margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     color: $colorText;
     padding-left: 15px;
     padding-right: 15px;
-  }
   .hero_title {
     font-family: $fontPrimary;
     font-size: 42px;
     line-height: 55px;
     text-align: center;
-  }
+  
   .hero_subtitle {
     font-family: $fontSecundary;
     font-size: 16px;
     font-weight: 300;
   }
 }
+  }
 
-button.button_scroll_down {
+.button_scroll_down {
   width: 20px;
-  height: 11.7px;
-  object-fit: contain;
-  background-color: $colorcontent;
+  height: 11.7px;;
+  background-color: $colorContent;
+  
+}
+  
 }

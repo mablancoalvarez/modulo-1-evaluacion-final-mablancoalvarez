@@ -1,9 +1,7 @@
-
 // main styles
 
-.container_main{
-
-  height:376px ;
+.container_main {
+  height: 376px;
 }
 
 .tips {
@@ -17,7 +15,7 @@
     font-style: normal;
     line-height: 2.14;
     letter-spacing: normal;
-    color: $colormain;
+    color: $colorMain;
   }
 
   &_title {
@@ -49,7 +47,7 @@
   width: 76px;
   height: 45px;
   border-radius: 22.5px;
-  border: solid 2px $colorcontent;
+  border: solid 2px $colorBorder;
   text-align: center;
   .button_tips {
     width: 25px;
@@ -62,18 +60,17 @@
     line-height: 2.25;
     letter-spacing: normal;
     text-align: center;
-    color: $colorcontent;
+    color: $colorBorder;
   }
 }
 
-
 // section styles start here
 
-
-.container_reason  {
-  background-color: $colorclear;
+.container_reason {
+  background-color: $colorClear;
   width: 100%;
   height: 624px;
+  position:relative;
 }
 
 .text_reason {
@@ -90,75 +87,78 @@
   color: $colorGeneral;
 }
 
+.container_article {
+  text-align: center;
+  max-width: 180px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 
-  .container_article{
+  .article_text {
+    font-family: $fontPrimary;
+    font-weight: bold;
+    color: $colorGeneral;
+    font-size: 18px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
     text-align: center;
-    max-width: 180px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-
-    .article_text {
-
-      font-family: $fontPrimary;
-      font-weight: bold;
-      color: $colorGeneral;
-      font-size: 18px;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.67;
-      letter-spacing: normal;
-      text-align: center;
-      width: 184px;
-      height: 30px;
-    }
+    width: 184px;
+    height: 30px;
   }
-    .article_content {
-      margin:0px;
-      padding:0px;
-      width: 180px;
-      height: 63px;
-      font-family: $fontSecundary;
-      font-size: 18px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.67;
-      letter-spacing: normal;
-      text-align: center;
+}
+.article_content {
+  margin: 0px;
+  padding: 0px;
+  width: 180px;
+  height: 63px;
+  font-family: $fontSecundary;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: center;
+}
 
-      }
-    
+.article3 {
+  padding-bottom: 45px;
+}
 
-  .article3{
-    padding-bottom: 45px;;
-  }
-
-.box_reason{
+.box_reason {
   width: 184px;
   height: 45px;
   border-radius: 22.5px;
-  background-color: $colorcontent;
+  background-color: $colorBorder;
   text-align: center;
   margin: auto;
   text-transform: none;
 }
+.button_reason {
+  width: 124px;
+  height: 45px;
+  font-family: $fontSecundary;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: $colorClear;
+}
+// button scroll up
 
-  .button_reason {
-    width: 124px;
-    height: 45px;
-    font-family:$fontSecundary;
-    font-size: 20px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 2.25;
-    letter-spacing: normal;
-    text-align: center;
-    color:$colorclear;
+.button_scroll_up {
+  left:50%;
+  position: absolute;
+  z-index: 5;
+  bottom:0%;
+  transform:translate(-50%,+50%)
   
-  }
+  // transform:translateY(+50%);
 
-  
-
+}

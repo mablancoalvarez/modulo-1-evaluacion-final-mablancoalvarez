@@ -1,0 +1,32 @@
+.footer {
+    background: $colorFooter;
+    text-align: center;
+    margin-top:0px;
+    padding: 45px 0 45px;
+    background-color: #304268;
+    font-family: $fontSecundary;
+    font-size: 16px;
+    color:$colorText;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer_sections, .footer_social{
+text-transform: uppercase;
+}
+
+
+.we{
+    width: 290px;
+  height: 30px
+
+}
+.heart {
+    color:$colorBorder;
+}
+
+
