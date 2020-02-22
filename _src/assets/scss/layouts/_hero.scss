@@ -1,13 +1,12 @@
 .box_hero {
-    background-image:url(../images/cover.jpg);
-    height: 100vh;
-    max-height: 568px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+  background-image: url(../images/cover.jpg);
+  height: 100vh;
+  max-height: 568px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
-    .hero_text{
+  .hero_text {
     height: 100vh;
     width: 290px;
     margin: auto;
@@ -15,60 +14,29 @@
     display: -ms-flexbox;
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     text-align: center;
     color: $colorText;
     padding-left: 15px;
     padding-right: 15px;
-
-
-        .hero_title{
-        font-family: $fontPrimary;
-        font-size: 42px;
-        line-height: 55px;
-        text-align: center;
-    }
-
-        .hero_subtitle{
-        font-family: $fontSecundary;
-        font-size: 16px;
-         font-weight: 300;
-
-
-    }
- 
+  }
+  .hero_title {
+    font-family: $fontPrimary;
+    font-size: 42px;
+    line-height: 55px;
+    text-align: center;
+  }
+  .hero_subtitle {
+    font-family: $fontSecundary;
+    font-size: 16px;
+    font-weight: 300;
+  }
 }
 
-
-.button {
-
-    width: 45px;
-    height: 45px;
-    border-radius: 22.5px;
-    background-color:$colorText;
-}
-.button_scroll_down{
-
-width: 20px;
+button.button_scroll_down {
+  width: 20px;
   height: 11.7px;
   object-fit: contain;
-  background-color:$colorcontent;
-
+  background-color: $colorcontent;
 }
-
-.tips_button {
-    width: 76px;
-    height: 45px;
-    border-radius: 22.5px;
-    border: solid 2px $colorcontent;
-
-}
-
-    
-    
-
-    
-
-
-    

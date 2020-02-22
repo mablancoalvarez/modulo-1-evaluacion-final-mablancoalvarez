@@ -1,39 +1,48 @@
-.tips_subtext{
-width: 90px;
-height: 30px;
-font-family: $fontSecundary;
-font-size: 14px;
-font-weight: normal;
-font-stretch: normal;
-font-style: normal;
-line-height: 2.14;
-letter-spacing: normal;
-color: $colormain;
+
+// main styles
+
+.container_main{
+
+  height:376px ;
 }
 
-.tips_title {
-  width: 290px;
-  height: 60px;
-  font-family: $fontPrimary;
-  font-size: 24px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.25;
-  letter-spacing: normal;
-  color: $colorGeneral;
-}
+.tips {
+  &_subtext {
+    width: 90px;
+    height: 30px;
+    font-family: $fontSecundary;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.14;
+    letter-spacing: normal;
+    color: $colormain;
+  }
 
-.tips_content {
-  height: 120px;
-  font-family: Roboto;
-  font-size: 18px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.67;
-  letter-spacing: normal;
-  color: $colorContent;
+  &_title {
+    width: 290px;
+    height: 60px;
+    font-family: $fontPrimary;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: $colorGeneral;
+  }
+  &_content {
+    height: 120px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    color: $colorContent;
+  }
 }
 
 .box_tips {
@@ -42,32 +51,34 @@ color: $colormain;
   border-radius: 22.5px;
   border: solid 2px $colorcontent;
   text-align: center;
+  .button_tips {
+    width: 25px;
+    height: 45px;
+    font-family: $fontSecundary;
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.25;
+    letter-spacing: normal;
+    text-align: center;
+    color: $colorcontent;
+  }
 }
 
-.button_tips{
-  width: 25px;
-  height: 45px;
-  font-family: $fontSecundary;
-  font-size: 20px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.25;
-  letter-spacing: normal;
-  text-align: center;
-  color:$colorcontent;
-}
 
-.container_reason {
+// section styles start here
+
+
+.container_reason  {
   background-color: $colorclear;
   width: 100%;
   height: 624px;
-
 }
 
-.text_reason{
+.text_reason {
   text-align: center;
-  padding: 15px 30px;
+  padding: 30px 15px;
   font-family: $fontPrimary;
   font-size: 24px;
   font-weight: bold;
@@ -76,6 +87,49 @@ color: $colormain;
   line-height: 1.25;
   letter-spacing: normal;
   text-align: center;
-  color:$colorGeneral;
+  color: $colorGeneral;
+}
+
+
+  .container_article{
+    box-sizing: border-box;
+    text-align: center;
+    max-width: 180px;
+    margin: auto;
+    padding:0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px;
+
+    .article_text {
+
+      font-family: $fontPrimary;
+      font-weight: bold;
+      color: $colorGeneral;
+      font-size: 18px;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.67;
+      letter-spacing: normal;
+      text-align: center;
+      width: 184px;
+      height: 30px;
+    }
+
+    .article_content {
+      margin:0px;
+      padding:0px;
+      width: 180px;
+      height: 63px;
+      font-family: $fontSecundary;
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.67;
+      letter-spacing: normal;
+      text-align: center;
+    }
 
 }
