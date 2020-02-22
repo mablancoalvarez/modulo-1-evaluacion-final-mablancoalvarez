@@ -44,3 +44,14 @@
 .button_scroll_down {
   margin: auto;
 }
+
+// Responsive starts here
+
+
+@include forTablet{
+.box_hero {
+  height:100vh;
+
+  
+}
+}

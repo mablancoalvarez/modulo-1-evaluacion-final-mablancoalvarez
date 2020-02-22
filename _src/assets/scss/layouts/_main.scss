@@ -159,3 +159,24 @@
   bottom:0%;
   transform:translate(-50%,+50%)
 }
+
+// A partir de aqui es responsive
+
+
+@include forTablet{
+  .container_article {
+    text-align: center;
+    max-width: 180px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;}
+  
+    .container_reason {
+      background-color: $colorClear;
+      width: 100%;
+      height: 100%;
+      position:relative;
+    }
+  }
+

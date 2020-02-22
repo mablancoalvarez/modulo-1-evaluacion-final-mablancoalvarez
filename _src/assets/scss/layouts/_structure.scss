@@ -11,16 +11,20 @@
 
 // container
 
-.container {
-max-width: 290px;
-margin:auto;
-@include forTablet{
-  max-width: 690px;
-}
+// .container {
+// width:100%;
+// max-width: 290px;
+// margin:auto;
 
-}
+// @include forTablet{
+//   width: 100%;
+//   max-width: 800px;
+//   margin:39px;
+// }
 
-/* A partir de aqui es responisve */
+// }
+
+
 
 
 
