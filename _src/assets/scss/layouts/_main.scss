@@ -164,19 +164,26 @@
 
 
 @include forTablet{
+
+  .container_reason {
+    height: 397px;
+  }
   .container_article {
-    text-align: center;
-    max-width: 180px;
-    margin: auto;
+    
+    max-width: none;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;}
-  
-    .container_reason {
-      background-color: $colorClear;
-      width: 100%;
-      height: 100%;
-      position:relative;
+    align-content:center;
+    justify-self: center;
+    margin-left:40px;
+
+    .box_reason {
+      
+      margin-top:292px;
+      text-transform: none;
     }
+  
+  
   }
 
