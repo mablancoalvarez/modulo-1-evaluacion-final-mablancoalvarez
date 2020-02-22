@@ -13,5 +13,15 @@
 
 .container {
 max-width: 290px;
-margin: auto; 
+margin:auto;
+@include forTablet{
+  max-width: 690px;
 }
+
+}
+
+/* A partir de aqui es responisve */
+
+
+
+
