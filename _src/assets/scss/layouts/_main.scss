@@ -92,15 +92,12 @@
 
 
   .container_article{
-    box-sizing: border-box;
     text-align: center;
     max-width: 180px;
     margin: auto;
-    padding:0px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 20px;
 
     .article_text {
 
@@ -116,7 +113,7 @@
       width: 184px;
       height: 30px;
     }
-
+  }
     .article_content {
       margin:0px;
       padding:0px;
@@ -130,6 +127,38 @@
       line-height: 1.67;
       letter-spacing: normal;
       text-align: center;
-    }
 
+      }
+    
+
+  .article3{
+    padding-bottom: 45px;;
+  }
+
+.box_reason{
+  width: 184px;
+  height: 45px;
+  border-radius: 22.5px;
+  background-color: $colorcontent;
+  text-align: center;
+  margin: auto;
+  text-transform: none;
 }
+
+  .button_reason {
+    width: 124px;
+    height: 45px;
+    font-family:$fontSecundary;
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.25;
+    letter-spacing: normal;
+    text-align: center;
+    color:$colorclear;
+  
+  }
+
+  
+
