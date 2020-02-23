@@ -2,37 +2,29 @@
   width: 45px;
   height: 45px;
   border-radius: 22.5px;
-  background-color:$colorText;
+  background-color: $colorText;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
 // container
 
 .container {
-width:100%;
-max-width: 290px;
-margin: auto;
+  width: 100%;
+  max-width: 290px;
+  margin: auto;
 }
 
-@include forTablet{
-  .container{
+@include forTablet {
+  .container {
     max-width: 690px;
-    margin-left:35.7px;
+    margin-left: 35.7px;
   }
 }
-// @include forTablet{
-//   width: 100%;
-//   max-width: 800px;
-//   margin:39px;
-// }
-
-// }
-
-
-
-
-
-
+@include forPc {
+  .container {
+    max-width: 730px;
+    margin-left: 275px;
+  }
+}

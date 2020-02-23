@@ -62,13 +62,13 @@
       color: $colorText;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
       align-content: center;
     }
 
     .hero_title {
       width: 690px;
-      height: none;
+      height: 212px;
       font-family: $fontPrimary;
       font-size: 80px;
       line-height: 106px;
@@ -80,10 +80,6 @@
       height: 32px;
       font-size: 24px;
       text-align: center;
-      margin-top: 60px;
-      // font-weight: 300;
-      // text-align: center;
-      // margin-bottom: 30px;
     }
 
     .button_scroll_down {
@@ -91,3 +87,30 @@
     }
   }
 }
+@include forPc {
+
+  .box_hero {
+    max-height: 768px;
+    height: 100vh;
+  
+    .hero_text {
+      width: 730px;
+      margin: auto;
+      color: $colorText;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-content: center;
+    }
+  }
+  .hero_title {
+    font-size: 100px;
+    width: 730px;
+    height: 264px;
+    line-height: 1.32px;
+    margin-top: 384px;
+  }
+}
+
+
+

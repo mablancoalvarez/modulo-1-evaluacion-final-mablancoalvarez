@@ -24,6 +24,7 @@
     color: $colorGeneral;
   }
   &_content {
+    width: 290px;
     height: 120px;
     font-family: Roboto;
     font-size: 18px;
@@ -42,6 +43,7 @@
   border-radius: 22.5px;
   border: solid 2px $colorBorder;
   text-align: center;
+  margin-bottom: 45px;
   .button_tips {
     width: 25px;
     height: 45px;
@@ -87,6 +89,7 @@
   grid-gap: 45px;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+
   .article_text {
     font-family: $fontPrimary;
     font-weight: bold;
@@ -152,9 +155,31 @@
   transform: translate(-50%, +50%);
 }
 
-// A partir de aqui es responsive
+// Here starts responsive design
 
 @include forTablet {
+  .tips {
+    &_subtext {
+      width: 216px;
+    }
+    &_title {
+      width: 690px;
+      height: 45px;
+      font-size: 26px;
+      line-height: 1.73;
+    }
+    &_content {
+      width: 690px;
+      height: 60px;
+      font-size: 20px;
+      line-height: 1.5;
+    }
+  }
+  .box_tips {
+    width: 91px;
+    margin-bottom: 60px;
+    margin-top: 30px;
+  }
   .container_main {
     height: 330px;
   }
@@ -170,14 +195,32 @@
     margin-left: 35.7px;
     justify-items: center;
     align-items: center;
-
+    .article_text {
+      font-size: 24px;
+      line-height: 1.25;
+      width: 210px;
+    }
+  }
+  .text_reason {
+    padding: 30px 15px;
+    font-size: 26px;
+    line-height: 1.73;
+  }
+  .article_content {
+    margin: 0px;
+    padding: 0px;
+    width: 212.3px;
+    height: 68px;
+    font-family: $fontSecundary;
+    font-size: 20px;
+    line-height: 1.5;
     &.article3 {
       padding-bottom: 0px;
     }
   }
-
   .box_reason {
     margin-top: 60px;
     text-transform: none;
+    width: 210px;
   }
 }
