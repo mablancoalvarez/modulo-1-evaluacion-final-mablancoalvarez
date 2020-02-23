@@ -1,9 +1,3 @@
-// main styles
-
-//  .container_main {
-//   height: 376px;
-// }
-
 .tips {
   &_subtext {
     width: 90px;
@@ -17,7 +11,6 @@
     letter-spacing: normal;
     color: $colorMain;
   }
-
   &_title {
     width: 290px;
     height: 60px;
@@ -64,13 +57,13 @@
   }
 }
 
-// section styles start here
+// section 3 reasons start here
 
-.container_reason {
+.container_reason  {
   background-color: $colorClear;
   width: 100%;
   height: 624px;
-  position:relative;
+  position: relative;
 }
 
 .text_reason {
@@ -86,15 +79,14 @@
   text-align: center;
   color: $colorGeneral;
 }
-
 .container_article {
   text-align: center;
   max-width: 180px;
   margin: auto;
   display: grid;
+  grid-gap: 45px;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-
   .article_text {
     font-family: $fontPrimary;
     font-weight: bold;
@@ -123,11 +115,10 @@
   letter-spacing: normal;
   text-align: center;
 
-.article3 {
-  padding-bottom: 45px;
+  .article3 {
+    padding-bottom: 45px;
+  }
 }
-}
-
 .box_reason {
   width: 184px;
   height: 45px;
@@ -136,6 +127,7 @@
   text-align: center;
   margin: auto;
   text-transform: none;
+  margin-top: 45px;
 }
 .button_reason {
   width: 124px;
@@ -153,43 +145,39 @@
 // button scroll up
 
 .button_scroll_up {
-  left:50%;
-  position:absolute;
+  left: 50%;
+  position: absolute;
   z-index: 5;
-  bottom:0%;
-  transform:translate(-50%,+50%)
+  bottom: 0%;
+  transform: translate(-50%, +50%);
 }
 
 // A partir de aqui es responsive
 
-
 @include forTablet {
   .container_main {
-    height:330px;
+    height: 330px;
   }
-
-  .container_reason {
+  .container_reason  {
     height: 397px;
   }
   .container_article {
-    
     max-width: none;
     display: grid;
+    grid-gap: 28px;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-left: auto;
+    margin-left: 35.7px;
     justify-items: center;
     align-items: center;
 
-  
-      &.article3 {
-        padding-bottom: 0px;
-      
+    &.article3 {
+      padding-bottom: 0px;
     }
   }
-  
-    .box_reason {
-     margin-top: 60px;
-      text-transform: none;
-    }
+
+  .box_reason {
+    margin-top: 60px;
+    text-transform: none;
+  }
 }

@@ -5,16 +5,20 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: baseline;
-  align-content: center;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: baseline;
+  // align-content: center;
 }
 .hero_text {
   width: 290px;
   margin: auto;
   color: $colorText;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-content: center;
 
   .hero_title {
     width: 290px;
@@ -47,11 +51,43 @@
 
 // Responsive starts here
 
+@include forTablet {
+  .box_hero {
+    max-height: 768px;
+    height: 100vh;
 
-@include forTablet{
-.box_hero {
-  height:100vh;
+    .hero_text {
+      width: 690px;
+      margin: auto;
+      color: $colorText;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+    }
 
-  
-}
+    .hero_title {
+      width: 690px;
+      height: none;
+      font-family: $fontPrimary;
+      font-size: 80px;
+      line-height: 106px;
+      margin-top: 380px;
+    }
+
+    .hero_subtitle {
+      font-family: $fontSecundary;
+      height: 32px;
+      font-size: 24px;
+      text-align: center;
+      margin-top: 60px;
+      // font-weight: 300;
+      // text-align: center;
+      // margin-bottom: 30px;
+    }
+
+    .button_scroll_down {
+      margin: auto;
+    }
+  }
 }
