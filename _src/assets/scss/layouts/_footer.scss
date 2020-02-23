@@ -30,3 +30,52 @@ text-transform: uppercase;
 }
 
 
+// Responsive design starts here
+
+@include forTablet {
+    // .footer{
+    
+    //     display:inline;
+    //     display: flex;
+    //     flex-direction:row;
+    //     justify-content: flex-start;
+       
+    // }
+
+    .footer_content{
+       
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 690px;
+        margin-top: 45px;
+       
+
+        .footer_social{
+
+           display: flex;
+           width: 279px;
+           height: 150px; 
+           order:3;
+           
+        } 
+        .footer_sections{
+            display: flex;
+            width: 210px;
+            height: 150px;
+            order:2;
+                
+        }
+        .footer_copy{
+            display: flex;
+            display: block;
+            text-align:justify;
+            width: 279px;
+           height: 150px; 
+        
+        }
+        
+}
+    
+}

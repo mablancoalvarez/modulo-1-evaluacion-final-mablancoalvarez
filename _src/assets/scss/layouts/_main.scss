@@ -1,8 +1,8 @@
 // main styles
 
- .container_main {
-  height: 376px;
-}
+//  .container_main {
+//   height: 376px;
+// }
 
 .tips {
   &_subtext {
@@ -122,10 +122,10 @@
   line-height: 1.67;
   letter-spacing: normal;
   text-align: center;
-}
 
 .article3 {
   padding-bottom: 45px;
+}
 }
 
 .box_reason {
@@ -163,7 +163,7 @@
 // A partir de aqui es responsive
 
 
-@include forTablet{
+@include forTablet {
   .container_main {
     height:330px;
   }
@@ -181,19 +181,15 @@
     justify-items: center;
     align-items: center;
 
-  }
-
-    
-      .article3 {
+  
+      &.article3 {
         padding-bottom: 0px;
       
     }
+  }
   
     .box_reason {
      margin-top: 60px;
       text-transform: none;
     }
-  
-  
-  }
-
+}
