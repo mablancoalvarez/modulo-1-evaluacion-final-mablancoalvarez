@@ -24,6 +24,7 @@
 }
 @include forPc {
   .container {
+    width: 100%;
     max-width: 730px;
     margin-left: 275px;
   }

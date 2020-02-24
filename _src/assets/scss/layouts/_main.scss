@@ -193,7 +193,7 @@
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     margin-left: 35.7px;
-    justify-items: center;
+    justify-items: flex-start;
     align-items: center;
     .article_text {
       font-size: 24px;
@@ -222,5 +222,54 @@
     margin-top: 60px;
     text-transform: none;
     width: 210px;
+    text-align: center;
   }
+}
+
+@include forPc {
+  .tips {
+    &_subtext {
+      width: 360px;
+      font-size: 16px;
+      margin-top: 60px;
+    }
+    &_title {
+      width: 730px;
+      font-size: 32px;
+      line-height: 1.41px;
+    }
+    &_content {
+      width: 730px;
+    }
+    .box_tips {
+      width: 160px;
+    }
+  }
+  .container_main {
+    height: 360px;
+  }
+  .container_reason  {
+    height: 427px;
+  }
+  .text_reason {
+    padding: 30px 15px;
+    font-size: 32px;
+    line-height: 1.41;
+  }
+  .container_article {
+    text-align: center;
+    grid-gap: auto;
+    margin-left: 81.2px;
+    justify-items: flex-start;
+    align-content: space-around;
+    .article_text {
+      width: 350px;
+    }
+    .article_content {
+      width: 353.8px;
+    }
+    .box_reason {
+      width: 255px;
+  }
+}
 }
