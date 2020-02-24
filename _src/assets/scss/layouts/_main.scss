@@ -57,6 +57,15 @@
     text-align: center;
     color: $colorBorder;
   }
+
+  & a {
+    padding: 15px;
+    &:hover,
+    &:focus {
+      color: $colorGeneral;
+      transition: all 0.8s ease;
+    }
+  }
 }
 
 // section 3 reasons start here
@@ -131,6 +140,10 @@
   margin: auto;
   text-transform: none;
   margin-top: 45px;
+
+  &:hover {
+    background: white;
+    }
 }
 .button_reason {
   width: 124px;
@@ -145,6 +158,17 @@
   text-align: center;
   color: $colorClear;
 }
+  .button_reason {
+    color: white;
+    padding: 15px;
+    &:hover,
+    &:focus {
+      color:$colorBorder;
+      transition: all 0.9s ease;
+    }
+  }
+
+
 // button scroll up
 
 .button_scroll_up {
@@ -270,6 +294,6 @@
     }
     .box_reason {
       width: 255px;
+    }
   }
-}
 }
