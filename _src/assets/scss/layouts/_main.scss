@@ -44,6 +44,7 @@
   border: solid 2px $colorBorder;
   text-align: center;
   margin-bottom: 45px;
+
   .button_tips {
     width: 25px;
     height: 45px;
@@ -56,6 +57,9 @@
     letter-spacing: normal;
     text-align: center;
     color: $colorBorder;
+    animation-name: go;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
   }
 
   & a {
@@ -63,12 +67,26 @@
     &:hover,
     &:focus {
       color: $colorGeneral;
-      transition: all 0.8s ease;
+      transition: all 0.5s ease;
     }
   }
 }
+@keyframes go {
+  0% {
+    transform: scale(0.2);
+    opacity: 0.8;
+  }
+  80% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(2.2);
+    opacity: 0.8;
+  }
+}
 
-// section 3 reasons start here
+// section 3 reasons starts here
 
 .container_reason  {
   background-color: $colorClear;
@@ -143,7 +161,7 @@
 
   &:hover {
     background: white;
-    }
+  }
 }
 .button_reason {
   width: 124px;
@@ -158,16 +176,15 @@
   text-align: center;
   color: $colorClear;
 }
-  .button_reason {
-    color: white;
-    padding: 15px;
-    &:hover,
-    &:focus {
-      color:$colorBorder;
-      transition: all 0.9s ease;
-    }
+.button_reason {
+  color: white;
+  padding: 15px;
+  &:hover,
+  &:focus {
+    color: $colorBorder;
+    transition: all 0.9s ease;
   }
-
+}
 
 // button scroll up
 
