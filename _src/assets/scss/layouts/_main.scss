@@ -246,13 +246,10 @@
     }
   }
   .text_reason {
-    padding: 30px 15px;
     font-size: 26px;
     line-height: 1.73;
   }
   .article_content {
-    margin: 0px;
-    padding: 0px;
     width: 212.3px;
     height: 68px;
     font-family: $fontSecundary;
@@ -264,9 +261,7 @@
   }
   .box_reason {
     margin-top: 60px;
-    text-transform: none;
     width: 210px;
-    text-align: center;
   }
 }
 
@@ -304,7 +299,6 @@
     text-align: center;
     grid-gap: auto;
     margin-left: 81.2px;
-    justify-items: flex-start;
     align-content: space-around;
     .article_text {
       width: 350px;

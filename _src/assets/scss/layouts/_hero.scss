@@ -64,40 +64,26 @@
 
 @include forTablet {
   .box_hero {
+    height: 100%;
     max-height: 768px;
-    height: 100vh;
   }
   .hero_text {
     width: 690px;
-    margin: auto;
-    color: $colorText;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: center;
-
     .hero_title {
       width: 690px;
       height: 212px;
-      font-family: $fontPrimary;
       font-size: 80px;
       line-height: 106px;
       margin-top: 380px;
       margin-bottom: 0px;
     }
-
     .hero_subtitle {
-      font-family: $fontSecundary;
       width: 360px;
       height: 32px;
       font-size: 24px;
       margin: auto;
-      text-align: center;
       margin-bottom: 30px;
     }
-  }
-  .button_scroll_down {
-    margin: auto;
   }
 }
 
@@ -106,21 +92,16 @@
     max-height: 768px;
     height: 100vh;
     width: 100%;
-
-    .hero_text {
-      margin: auto;
-      color: $colorText;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-content: center;
-    }
   }
-  .hero_title {
-    font-size: 100px;
-    width: 730px;
-    height: 264px;
-    line-height: 1.32px;
-    margin-top: 384px;
+  .hero_text {
+    .hero_title {
+      font-size: 100px;
+      width: 730px;
+      height: 264px;
+    }
+    .hero_subtitle {
+      width: 730px;
+      margin-top:-30px;
+     }
   }
 }
